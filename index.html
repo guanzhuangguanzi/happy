@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md fixed-top" style="background-color: cadetblue;">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">银杏的网页</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: lightcyan;">个人介绍</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: lightcyan;">教育背景</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: lightcyan;">旅游日记</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: lightcyan;">兴趣爱好</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: lightcyan;">联系方式</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header class="header">
+    <!-- 轮播 -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- 指示符 -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- 轮播图片 -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="1.jpg" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="2.jpg" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="3.jpg" class="d-block" style="width:100%">
+        </div>
+      </div>
+
+      <!-- 左右切换按钮 -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </header>
+  <main class="container">
+    <div class="row">
+      <aside class="asidebar col-sm-3 mt-3">
+        <div class="card">
+          <img class="card-img-top p-4" src="p.jpg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">银杏</h4>
+            <p class="card-text">热爱生活，奔赴现场</p>
+            <a href="#" class="btn btn-danger">点赞</a>
+          </div>
+        </div>
+      </aside>
+      <section class="col-sm-9 mt-3">
+        <div class="card mb-3">
+          <div class="card-header">教育背景</div>
+          <div class="card-boby">
+            <div class="list-group list-group-checkable">
+
+              <label class="list-group-item py-3" for="listGroupCheckableRadios1">
+                小学
+                <span class="d-block small opacity-50">2012-2017</span>
+              </label>
+
+
+              <label class="list-group-item py-3" for="listGroupCheckableRadios2">
+                初中
+                <span class="d-block small opacity-50">2018-2020</span>
+              </label>
+
+
+              <label class="list-group-item py-3" for="listGroupCheckableRadios3">
+                高中
+                <span class="d-block small opacity-50">2021-2023</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <h3 class="card-title p-3">旅游日记</h3>
+          <div class="row p-3">
+            <div class="col-sm-4">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img src="fy.jpg" width="80%">
+              </a>
+              <div class="modal" id="myModal" style="margin-top: 5rem;">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+
+                    <!-- 模态框头部 -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">2025 阜阳</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- 模态框内容 -->
+                    <div class="modal-body">
+                      <img src="fy.jpg" width="80%">
+                    </div>
+
+                    <!-- 模态框底部 -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <a href="#" data-bs-toggle="modal"  data-bs-target="#myModal1">
+                <img src="ny.jpg" width="80%">
+              </a>
+              <div class="modal" id="myModal1" style="margin-top: 5rem;">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+
+                    <!-- 模态框头部 -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">模态框标题</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- 模态框内容 -->
+                    <div class="modal-body">
+                      <img src="ny.jpg" width="80%">
+                    </div>
+
+                    <!-- 模态框底部 -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#myModal2">
+                <img src="wz.jpg" width="80%">
+              </a>
+              <div class="modal" id="myModal2" style="margin-top: 5rem;">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+
+                    <!-- 模态框头部 -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">模态框标题</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- 模态框内容 -->
+                    <div class="modal-body">
+                      <img src="wz.jpg" width="80%">
+                    </div>
+
+                    <!-- 模态框底部 -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer bg-dark text-light p-5">联系方式：123456123</footer>
+
+
+
+
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.staticfile.net/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
